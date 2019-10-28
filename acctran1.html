@@ -1,0 +1,302 @@
+<!DOCTYPE HTML> 
+<html> 
+  	<head>
+      	<meta charset="UTF-8"> 
+     	<meta name="generator" content="iXebStudio Platform 2.2019.0808.5">
+     	<meta name="created" content="undefined">
+    	<meta name="ixeb-studio:SaveZOrder" content="undefined">
+     	<meta name="ixeb-studio:grid-size" content="10x10">
+		<meta name="ixeb-studio:screen-size" content="1920x1080">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>acctran1</title>
+  	<style type="text/css">    
+        ul, li{
+            list-style: none;
+            padding:0;
+            margin:0;
+        }
+    	#ptest{
+			display:none;
+		}
+		.nav{
+			display: none;
+		}
+		.notice{
+			border:1px solid #000;
+		}
+		.nav-list{
+			list-style: none;
+		}
+		.aworkwh{
+			border: 1px solid grey; 
+			height:300px; 
+			text-align: center;
+		}
+		.nobullet{
+			list-style: none;
+		}
+		.transdur{
+			transition : all 1s ease;
+		}
+        .dropbtn{
+            background-color: sandybrown;
+            color: white;
+            padding: 20px;
+            font-size: 16px;
+        }
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+        .dropdown-content {
+		height: 0;
+    	overflow: hidden;
+        transition : height 1s ease;
+        /* background-color: #f9f9f9; */
+        min-width: 90px;
+        z-index: 1;
+        text-align: left;
+        }
+		.dropdown-content.show{
+			height:300px;
+		}
+		.dropdown-content.inittest{
+			height: 0px;
+		}
+        .dropdown-content a {
+        color: black;
+        padding: 6px 8px;
+        text-decoration: none;
+        display: block;
+        overflow: hidden;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+        .dropdown:hover .dropbtn {
+        background-color: salmon;
+        }
+		.fmargin{
+			margin-top: 300px;
+		}
+    	@media (min-width: 1200px) { 
+		#ptest{
+			display:block;
+			float: left;
+			margin-top : 29px;
+		}
+		.nav{
+			display: block;
+		}
+		.pull-left{
+			float: left;
+		}
+		#aworktest{
+			width:800px;
+		}
+		.aworkwh{
+			width: 800px;
+		}
+		.notice{
+			width:280px;
+		}
+		.content{
+			overflow: hidden;
+		}
+		.test-p{
+			float: left;
+			width: 100px;
+			margin-left: 30px;
+		}
+		.aworkwh{
+			width: 380px;
+			float: left;
+		}
+		.choose{
+			font-size: 15;
+		}
+		}
+
+	</style> 
+    </head>  
+  		<body style="background-color: honeydew;">
+			<div class="wrap">
+				<div class="header" style="overflow: hidden; background-color: beige; border-bottom: solid 1px gray;">
+					<div>
+						<p style="font-size: 20px; float: left;">iXeb</p>
+					</div>
+					<div id="ptest" style="float:left"></div>  <!-- ptest setDataBind 첫번째 지점-->
+				</div>
+				<div class="main">
+					<div class="nav" sttyle="overflow:hidden">
+						<div>
+							<div  style= "overflow : hidden; float : left">
+								<ul>
+                                    <li class="nobullet dropdown"><p>업무메뉴</p>
+                                        <div style="width: 250px;">
+                						<ul>
+                    						<li class="nobullet depth transdur dropbtn"><p>Screen</p>
+                        						<ul class="nobullet dropdown-content">
+                            						<li class="nobullet"><a href="#"> Screen 1 </a></li>
+                            						<li class="nobullet"><a href="#"> Screen 2 </a></li>
+                            						<li class="nobullet"><a href="#"> Screen 3 </a></li>
+                            						<li class="nobullet"><a href="#"> Screen 4 </a></li>
+                            						<li class="nobullet"><a href="#"> Screen 5 </a></li>
+                            						<li class="nobullet"><a href="#"> Screen 6 </a></li>
+                            						<li class="nobullet"><a href="#"> Screen 7 </a></li>
+												</ul>
+                   							</li>
+                						</ul>
+                						<ul class="nobullet">
+                   							<li class="depth transdur dropbtn"><p>PopUp</p>
+                        						<ul class="dropdown-content">
+                           							<li class="nobullet"><a href="#"> Popup 1 </a></li>
+                            						<li class="nobullet"><a href="#"> Popup 2 </a></li>
+                           							<li class="nobullet"><a href="#"> Popup 3 </a></li>
+                            						<li class="nobullet"><a href="#"> Popup 4 </a></li>
+                            						<li class="nobullet"><a href="#"> Popup 5 </a></li>
+                            						<li class="nobullet"><a href="#"> Popup 6 </a></li>            								
+												</ul>
+                    						</li>
+                						</ul>
+                						<ul class="nobullet">
+                    						<li class="depth transdur dropbtn"><p>Extension</p>
+                        						<ul class="dropdown-content">									
+                            						<li class="nobullet"><a href="#"> Extension 1 </a></li>
+                            						<li class="nobullet"><a href="#"> Extension 2 </a></li>
+                            						<li class="nobullet"><a href="#"> Extension 3 </a></li>
+                            						<li class="nobullet"><a href="#"> Extension 4 </a></li>
+                            						<li class="nobullet"><a href="#"> Extension 5 </a></li>
+												</ul>
+                    						</li>
+                						</ul>
+                						<ul class="nobullet">
+                    						<li class="transdur dropbtn depth"><p>Grid Control</p>
+                        						<ul class="dropdown-content">
+													<li class="nobullet"><a href="#"> Grid control 1 </a></li>
+                            						<li class="nobullet"><a href="#"> Grid control 2 </a></li>
+                            						<li class="nobullet"><a href="#"> Grid control 3 </a></li>
+                            						<li class="nobullet"><a href="#"> Grid control 4 </a></li>
+												</ul>
+											</li>
+                						</ul>
+                						<ul class="nobullet ">
+                    						<li class="depth transdur dropbtn"><p>Basic Control</p>
+                        						<ul class="dropdown-content">
+													<li class="nobullet"><a href="#"> Basic Control 1 </a></li>
+                            						<li class="nobullet"><a href="#"> Basic Control 2 </a></li>
+                            						<li class="nobullet"><a href="#"> Basic Control 3 </a></li>
+												</ul>
+                    						</li>
+                						</ul>
+                						<ul class="nobullet">
+                    						<li class="depth transdur dropbtn"><p>Performance</p>
+                        						<ul class="dropdown-content">
+													<li class="nobullet"><a href="#"> Performance 1 </a></li>
+                            						<li class="nobullet"><a href="#"> Performance 2 </a></li>
+												</ul>
+                    						</li>
+                                        </ul>
+                                        </div>
+										<ul class="nobullet choose">
+											<li><p>Clear</p>
+											</li>
+										</ul>
+            						</li>
+        						</ul>
+							</div>
+							<div style="overflow : hidden; float : left">
+								<ul class="nobullet">
+									<li class="nobullet"><p>즐겨찾기</p></li>	
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- //nav -->
+					<div id="aworktest" class= "pull-left" style="margin-top: 20px; margin-left : 30px; overflow: hidden;"></div> <!--aworktest setDataBind 세번째 지점-->
+					<div style="overflow: hidden; margin-top: 20px">
+						<div class="notice"style="overflow: hidden">
+							<div><h1>공지사항</h1></div>
+							<div>
+								<span>대성그룹 김영훈 회장. 15년 연속 다보스 포럼참석</span>
+								<p >대성그룹 김영훈 회장이 오는 23일부터 26일까지 스위스 다보스에서 열리는 제48회 세계경제포럼에 참석</p>
+							</div>
+							<div>
+								<ul class="nav-list">
+									<li class="nav-item">2018년 국가안전대진단 실시</li>
+									<li class="nav-item" >2018년도 1차 용접원 연장시험 합격자 공고</li>
+									<li class="nav-item">시공업체(65A미만관로) 등록공고</li>
+								</ul>
+							</div>
+						</div>
+						<div class="notice" style="overflow: hidden">
+							<div>
+								<h1 style="font-size: 15px;">지시사항</h1>
+							</div>
+							<div>
+								<ul class="nav-list">
+									<li class="nav-item">시설분담금은 현금영수증 발행 부탁드립니다.</li>
+									<p >홍길동 | 2018.01.19</p>
+									<li class="nav-item">시설분담금은 현금영수증 발행 부탁드립니다.</li>
+									<p >홍길동 | 2018.01.19</p>
+									<li class="nav-item"> 시설분담금은 현금영수증 발행 부탁드립니다.</li>
+									<p>홍길동 | 2018.01.19</p>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+			<div class="footer fmargin">
+				<span style="text-align: center">Copyright ⓒ DAESUNG ENERGY. All Rights Reserved.</span>
+			</div>
+			<script type="text/javascript">
+				// document.querySelector('.choose').addEventListener('click',function(){
+				// 		testrmove();
+				// 	})
+				// function testrmove(){
+				// 	document.querySelectorAll('.depth').forEach(function(el){
+				// 		el.querySelector('ul').style.display = 'none';
+				// 	})
+				// }
+				document.querySelectorAll('.depth').forEach(function(el){
+					el.addEventListener('click', function(e){
+						testrmv();
+						// e.target.nextElementSibling.style.display = 'block';
+						e.target.nextElementSibling.classList.add('show');
+					})
+				});
+				function testrmv(){
+					document.querySelectorAll('.depth').forEach(function(el){
+						el.querySelector('ul').classList.remove('show');
+					})
+				}
+				document.querySelector('.choose').addEventListener('click',function(){
+					testchoose();
+					el.querySelector('ul').classList.add('inittest');
+				})
+				function testchoose(){
+					document.querySelectorAll('.depth').forEach(function(el){
+						el.querySelector('ul').classList.remove('show');
+					})
+				}
+				var pdata = ['menu1', 'menu2', 'menu3', 'menu4', 'menu5', 'menu6'];
+				var awork = [{part : "A업무", work : 99},{part : "B업무", work : 99},{part : "C업무", work : 99},{part : "D업무", work : 99},{part : "E업무", work : 99},{part : "F업무", work : 99}];
+				function onAfterInitScreen_body() {
+					setDataBind(1, document.getElementById('ptest'), pdata); // id : ptest
+					setDataBind(2, document.getElementById('aworktest'), awork); // id : aworktest
+				}
+				function setDataBind(num, node, data) {
+					var a = '';
+					for(var i = 0; i < data.length; i++){
+						if(num === 1) a = a + '<div class="test-p">'+ data[i] +'</div>';
+						else if(num === 2) a = a + '<div class="aworkwh"><h1 style="margin-top : 120px;">' + awork[i].part +' | '+ awork[i].work  + '</h1></div>';
+					}
+					node.innerHTML = a;
+				};
+				onAfterInitScreen_body()
+			</script>
+		</body> 
+</html>
